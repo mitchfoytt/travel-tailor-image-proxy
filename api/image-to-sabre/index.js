@@ -47,6 +47,16 @@ Strict rules:
 - No code blocks.
 - Use ONLY information visible in the screenshot. Do not guess or infer missing details.
 
+Codeshare Handling Rules:
+- If the screenshot shows multiple airline codes for the same flight (e.g. "XX/YY 3888"):
+    - The first airline code shown is the marketing carrier.
+    - Use the marketing carrier code as the segment carrier.
+    - Use the flight number show with that marketing carrier.
+    - Do NOT substitue the carrier code into the segment line. 
+    - Add a new line directly under the segment:
+    OPERATED BY [FULL AIRLINE NAME]
+- Never output the operating carrier code as the main segment unless it is the only carrier shown.
+
 Output format (one segment per line):
   SEG#  CARRIER  FLT#  CLASS  DATE  ORG DEST  DEPT ARR
 
