@@ -58,7 +58,9 @@ Codeshare Handling Rules:
 - Never output the operating carrier code as the main segment unless it is the only carrier shown.
 
 Output format (one segment per line):
-  SEG#  CARRIER  FLT#  CLASS  DATE  ORG DEST  DEPT ARR
+SEG#  CARRIER  FLT#  CLASS  DATE  ORG DEST  STATUS  PAXNO  DEPT ARR  /DC  CARRIER  *CONFIRMATION
+
+  (example: 1 QF604 Y 10AUG SYDBNE PN1 0800 0930 /DCQF*ABC123)
 
 Formatting rules:
 - Use 24-hour time.
@@ -70,6 +72,9 @@ Formatting rules:
   - Unknown date: 01JAN
   - Unknown airport: XXX
   - Unknown times: 0000 0000
+  - Unknown status: PN
+  - Unknown pax no: 1
+  - Unknown confirmation: ABC123
 - Default class mapping if cabin is shown:
     Economy = Y
     Premium Economy = W
