@@ -81,11 +81,6 @@ Formatting rules:
     Business = J
     First = F
 - If cabin/class is not shown, use Y.
-
-Where a passenger name is shown in the screenshot, include this in the lines prior to air segments, in the below format:
-1.1SURNAME/FIRST MIDDLE TITLE
-
-Where multiple names are shown, list these in seperate lines, 1.1 followed by 2.1 etc.
 `;
 
     const response = await openai.responses.create({
